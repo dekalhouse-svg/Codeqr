@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f172a"><meta name="description" content="QR DEKAL - générateur et scanner QR Code">
+<link rel="icon" href="images/favicon.ico"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="css/style.css">
+<title>QR DEKAL</title>
+</head>
+<body>
+<header class="topbar"><div class="brand"><img src="images/logo.png" alt="QR DEKAL"><span>QR DEKAL</span></div><span class="status">Générateur & scanner</span></header>
+<section id="adZone" class="ad hidden" aria-label="Publicité"></section>
+<main class="page">
+<section class="hero"><p>
+<section class="grid">
+<div class="card"><div class="card-head"><div><h2>Générer</h2><p>Texte, lien ou information</p></div><span class="number">01</span></div>
+<label for="texte">Contenu</label><input id="texte" type="text" placeholder="Entrez un texte ou une URL" autocomplete="off"><p id="message" class="message"></p>
+<button id="generer" class="primary">Générer le QR Code</button>
+<button id="scanner" class="primary" onclick='b(scanner-zone)'>Ouvrir le scanner</button>
+<div id="qrcode" class="qrbox"></div><button id="telecharger" class="secondary hidden">Télécharger le QR Code</button></div>
+<div class="card"><div class="card-head"><div><h2>Scanner</h2><p>Caméra ou image enregistrée</p></div><span class="number">02</span></div>
+<div id="scannerZone" class="scanner-zone hidden"><div class="options"><button class="option" id="camera"><span class="icon icon-camera"></span><strong>Caméra</strong><small>Scanner en direct</small></button><button class="option" id="galerie"><span class="icon icon-image"></span><strong>Image</strong><small>Choisir un QR</small></button></div><div id="reader"></div><input type="file" id="fichierQR" accept="image/*" hidden><div id="resultat" class="result hidden"></div><button id="fermerScanner" class="secondary">Fermer le scanner</button></div></div>
+</div>
+</main>
+<footer><span>QR DEKAL</span><span>App</span></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="https://unpkg.com/html5-qrcode"></script><script src="js/config.js"></script><script src="js/app.js"></script>
+</body></html>
