@@ -1,4 +1,4 @@
-const API_BASE_URL = window.QR_API_BASE_URL || 'http://127.0.0.1:5000';
+const API_BASE_URL = window.QR_API_BASE_URL || 'https://codeqrback.onrender.com';
 const form = document.getElementById('loginForm');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
